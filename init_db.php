@@ -1,6 +1,6 @@
 <?php
 
-$db = new PDO('sqlite:database.sqlite');
+$db = new PDO('sqlite:'.__DIR__.'/database.sqlite');
 $db->exec('DROP TABLE IF EXISTS users');
 $db->exec('CREATE TABLE users (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
